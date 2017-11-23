@@ -1,0 +1,17 @@
+version: "3"
+services:
+    swarmcity_certs:
+        build: build
+        image: swarmcity_certs
+        container_name: "SwarmCityCerts"
+        volumes:
+            - ./certs:/etc/letsencrypt
+            - ./certs-data:/data/letsencrypt
+            - ./logs:/var/log
+        ports:
+            - 8000:8000
+        environment:
+            - SITE_HOSTNAME=
+            - API_HOSTNAME=
+            - SSL_API_KEY=
+            - DEBUG=
