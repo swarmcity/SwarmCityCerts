@@ -13,7 +13,7 @@ generate_certs() {
       --no-self-upgrade \
       --no-bootstrap \
       --agree-tos \
-      --email eduadiez@gmail.com \
+      --email certificates@swarm.city \
       -d $1
   else
     echo -e "Debug is enabled ... " >> /var/log/cron.log
@@ -24,7 +24,7 @@ generate_certs() {
       --no-self-upgrade \
       --no-bootstrap \
       --agree-tos \
-      --email eduadiez@gmail.com \
+      --email certificates@swarm.city \
       --server https://acme-staging.api.letsencrypt.org/directory \
       -d $1
   fi
