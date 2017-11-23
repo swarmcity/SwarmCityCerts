@@ -6,7 +6,7 @@ services:
   - docker
 
 install:
-  - docker build -t swarmcity_certs build
+  - docker build -t swarmcity_certs .
 
 script:
   - docker images swarmcity_certs
