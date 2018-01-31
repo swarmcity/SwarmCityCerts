@@ -2,8 +2,10 @@
 
 [![Build Status](https://travis-ci.org/swarmcity/SwarmCityCerts.svg?branch=master)](https://travis-ci.org/swarmcity/SwarmCityCerts)
 
-# Swarm City
-### SwarmCityCerts
+# Swarm City Certs
+
+## Introduction
+The certs repo automates the process of obtaining the SSL certificates, the certificates ensure the communication from the site to the API is secure. We are obtaining the SSL from ‘Let’s Encrypt’ via CertBot. https://letsencrypt.org/
 
 ## Install dependencies
 
